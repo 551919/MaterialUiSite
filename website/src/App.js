@@ -4,13 +4,13 @@ import Button from '@mui/material/Button';
 import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container, Switch } from '@mui/material';
 
 const App = () => {
-	return(
+	return (
 		<div>
 			<Typography variant="hi">ratio</Typography>
 			<AppBar position='relative'>
 				<Toolbar>
 					<Typography variant="h6">
-						ratio2
+						balls
 					</Typography>
 
 				</Toolbar>
@@ -23,7 +23,7 @@ const App = () => {
 					<Grid contaner justify="flex-end">
 						<Switch >Ratio</Switch>
 					</Grid>
-					
+
 				</div>
 			</main>
 		</div>
