@@ -5,6 +5,7 @@ import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBasel
 import { MuiNavbar } from './modules/components/MuiNavbar';
 import { GridMain } from './modules/components/GridMain'
 import { Chart } from './modules/components/Chart'
+import { BgImage } from './modules/components/Bgimage'
 import './App.css'
 
 
@@ -13,6 +14,7 @@ function App() {
 	return (
 		<div className='App'>
 			<MuiNavbar />
+			<BgImage />
 			<GridMain />
 			<Chart />
 		</div>
