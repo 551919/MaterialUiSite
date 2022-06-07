@@ -7,6 +7,8 @@ import { GridMain } from './modules/components/GridMain'
 import { Chart } from './modules/components/Chart'
 import './App.css'
 
+
+
 function App() {
 	return (
 		<div className='App'>
