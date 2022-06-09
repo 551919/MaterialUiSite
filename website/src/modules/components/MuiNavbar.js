@@ -1,4 +1,4 @@
-import { AppBar, Icon, Toolbar, Typography, useStepperContext, Slide, useScrollTrigger, Stack, Button } from "@mui/material"
+import { AppBar, Icon, Toolbar, Typography, useStepperContext, Slide, useScrollTrigger, Stack, Button, Grid } from "@mui/material"
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 
 export const MuiNavbar = () => {
@@ -20,10 +20,12 @@ export const MuiNavbar = () => {
                     }}>
                         ORMI
                     </Typography>
-                    <Stack direction='row' spacing={2}>
-                        <Button color='inherit'>Sign In</Button>
-                        <Button color='inherit'>Sign Up</Button>
-                    </Stack>
+                    <Grid container justifyContent="flex-end">
+                        <Stack direction='row' spacing={2}>
+                            <Button color='inherit'>Sign In</Button>
+                            <Button color='inherit'>Sign Up</Button>
+                        </Stack>
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </Slide>
