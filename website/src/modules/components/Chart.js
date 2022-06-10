@@ -10,7 +10,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import React, { useState, useEffect } from "react";
 
- 
+
 export const Chart = () => {
   ChartJS.register(
     CategoryScale,
@@ -24,15 +24,15 @@ export const Chart = () => {
   const [chartData, setChartData] = useState({
     datasets: [],
   });
- 
+
   const [chartOptions, setChartOptions] = useState({});
- 
+
   useEffect(() => {
     setChartData({
       labels: ["John", "Kevin", "Geroge", "Micheal", "Oreo"],
       datasets: [
         {
-          label: "Whom'st let the dogs out",
+          label: "Graph",
           data: [12, 55, 34, 120, 720],
           borderColor: "rgb(53, 162, 235)",
           backgroundColor: "rgba(53, 162, 235, 0.4)",
@@ -47,12 +47,12 @@ export const Chart = () => {
         },
         title: {
           display: true,
-          text: "Whom'st let the dogs out",
+          text: "Graph",
         },
       },
     });
   }, []);
- 
+
   return (
     <div className="App">
       <Bar options={chartOptions} data={chartData} />
